@@ -1,0 +1,3 @@
+/home/hadasswittow/CLionProjects/schoolexe/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/hadasswittow/CLionProjects/schoolexe/cmake-build-debug/CMakeFiles/schoolexe.dir
+/home/hadasswittow/CLionProjects/schoolexe/cmake-build-debug/CMakeFiles/edit_cache.dir

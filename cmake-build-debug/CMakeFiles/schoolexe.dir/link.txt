@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/schoolexe.dir/main.cpp.o CMakeFiles/schoolexe.dir/Person.cpp.o CMakeFiles/schoolexe.dir/Student.cpp.o CMakeFiles/schoolexe.dir/Teacher.cpp.o CMakeFiles/schoolexe.dir/School.cpp.o CMakeFiles/schoolexe.dir/Tests.cpp.o  -o schoolexe 
