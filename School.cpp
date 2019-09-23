@@ -22,7 +22,7 @@ void School::pairTeacherToStudent(size_t ratio){
             }
             temp.push_back(*student_it++);
         }
-        m_teachersAndStudents.insert(std::pair<std::string,list<Student*> >((*teacher_it)->getName(),temp));
+        m_teachersAndStudents[(*teacher_it)->getName()]=temp;
         temp.clear();
     }
 }

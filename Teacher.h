@@ -11,10 +11,10 @@
 class Teacher: public Person {
 public:
     Teacher(const std::string& name, const std::string& lesson):Person(name),m_lesson(lesson){};
-    void action();
+    /*virtual*/void action();
     const std::string& getLesson();
 private:
-    const std::string m_lesson;
+    std::string m_lesson;
 };
 inline const std::string& Teacher::getLesson() {
     return m_lesson;

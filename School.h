@@ -12,6 +12,8 @@ using namespace std;
 #include <list>
 #include "Teacher.h"
 #include "Student.h"
+
+typedef map<std::string,list<Student*> > schoolMap;
 class School {
 public:
     void addStudent(Student* student);
@@ -23,7 +25,7 @@ public:
 private:
     vector<Student*> m_students;
     vector<Teacher*> m_teachers;
-    map<std::string,list<Student*> > m_teachersAndStudents;
+    mutable schoolMap m_teachersAndStudents;
 
 
 };
@@ -36,6 +38,6 @@ inline size_t School::getNumOfTeachers() const{
     return m_teachers.size();
 }
 inline std::list<Student*> School::getTeacherStudents(const std::string& teacherName) const {
-    return (m_teachersAndStudents.find(teacherName))->second;
+    return m_teachersAndStudents[teacherName];
 }
 #endif //SCHOOLEXE_SCHOOL_H

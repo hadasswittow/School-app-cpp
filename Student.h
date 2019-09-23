@@ -11,7 +11,7 @@
 class Student : public Person{
 public:
     Student(const std::string& name, unsigned char grade):Person(name),m_grade(grade){};
-    void action();
+    /*virtual*/void action();
     unsigned char getGrade();
 private:
     unsigned char m_grade;

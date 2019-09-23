@@ -36,6 +36,10 @@ iostream
 Person.h
 /home/hadasswittow/CLionProjects/schoolexe/Person.h
 
+/home/hadasswittow/CLionProjects/schoolexe/Teacher.cpp
+Teacher.h
+/home/hadasswittow/CLionProjects/schoolexe/Teacher.h
+
 /home/hadasswittow/CLionProjects/schoolexe/Teacher.h
 iostream
 -
