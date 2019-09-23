@@ -1,5 +1,0 @@
-School.o: School.cpp School.h Teacher.h Person.h Student.h
-Tests.o: Tests.cpp School.h Teacher.h Person.h Student.h Tests.h
-Teacher.o: Teacher.cpp Teacher.h Person.h
-Student.o: Student.cpp Student.h Person.h
-main.o: main.cpp Tests.h School.h Teacher.h Person.h Student.h
