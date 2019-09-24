@@ -7,6 +7,9 @@
 
 #include "School.h"
 #include "MyString.h"
+static School school;
+
 void test_creating_objects();
 void test_school();
+void test_exceptions();
 #endif //SCHOOLEXE_TESTS_H

@@ -4,12 +4,14 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/home/hadasswittow/CLionProjects/schoolexe/MyString.cpp" "/home/hadasswittow/CLionProjects/schoolexe/cmake-build-debug/CMakeFiles/schoolexe.dir/MyString.cpp.o"
   "/home/hadasswittow/CLionProjects/schoolexe/Person.cpp" "/home/hadasswittow/CLionProjects/schoolexe/cmake-build-debug/CMakeFiles/schoolexe.dir/Person.cpp.o"
   "/home/hadasswittow/CLionProjects/schoolexe/School.cpp" "/home/hadasswittow/CLionProjects/schoolexe/cmake-build-debug/CMakeFiles/schoolexe.dir/School.cpp.o"
   "/home/hadasswittow/CLionProjects/schoolexe/Student.cpp" "/home/hadasswittow/CLionProjects/schoolexe/cmake-build-debug/CMakeFiles/schoolexe.dir/Student.cpp.o"
   "/home/hadasswittow/CLionProjects/schoolexe/Teacher.cpp" "/home/hadasswittow/CLionProjects/schoolexe/cmake-build-debug/CMakeFiles/schoolexe.dir/Teacher.cpp.o"
   "/home/hadasswittow/CLionProjects/schoolexe/Tests.cpp" "/home/hadasswittow/CLionProjects/schoolexe/cmake-build-debug/CMakeFiles/schoolexe.dir/Tests.cpp.o"
   "/home/hadasswittow/CLionProjects/schoolexe/main.cpp" "/home/hadasswittow/CLionProjects/schoolexe/cmake-build-debug/CMakeFiles/schoolexe.dir/main.cpp.o"
+  "/home/hadasswittow/CLionProjects/schoolexe/stringFunctions.cpp" "/home/hadasswittow/CLionProjects/schoolexe/cmake-build-debug/CMakeFiles/schoolexe.dir/stringFunctions.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

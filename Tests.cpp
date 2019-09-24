@@ -23,31 +23,58 @@ void test_creating_objects(){
     assert(t1.getLesson()=="biology");
 
 }
+void test_exceptions(){
+    try {
+        //Student* stud=NULL;
+        //school.addStudent(stud);
+        //school.pairTeacherToStudent(15);
+        school.removeStudent(40);
+
+    }catch(const std::runtime_error& exception){
+        std::cout<<"Runtime error: "<<exception.what();
+    }catch(const std::invalid_argument& exception) {
+        std::cout << "Invalid argument: " << exception.what();
+    }catch(const std::logic_error& exception) {
+        std::cout << "Logic error: " << exception.what();
+    }
+}
 void test_school() {
-    School school;
-    school.addStudent(&s1);
-    school.addStudent(&s2);
-    school.addStudent(&s3);
-    school.addStudent(&s4);
-    school.addStudent(&s5);
-    school.addStudent(&s6);
-    school.addStudent(&s7);
-    school.addStudent(&s8);
-    school.addTeacher(&t1);
-    school.addTeacher(&t2);
-    school.addTeacher(&t3);
+    try {
+        School school;
+        school.addStudent(&s1);
+        school.addStudent(&s2);
+        school.addStudent(&s3);
+        school.addStudent(&s4);
+        school.addStudent(&s5);
+        school.addStudent(&s6);
+        school.addStudent(&s7);
+        school.addStudent(&s8);
+        school.addTeacher(&t1);
+        school.addTeacher(&t2);
+        school.addTeacher(&t3);
 
-    assert(school.getNumOfStudents() == 8);
-    assert(school.getNumOfTeachers() == 3);
-    school.pairTeacherToStudent(3);
+        assert(school.getNumOfStudents() == 8);
+        assert(school.getNumOfTeachers() == 3);
+        school.pairTeacherToStudent(3);
 
-    school.removeTeacher(8);
-    assert(school.getNumOfTeachers() == 2);
+        school.removeTeacher(8);
+        assert(school.getNumOfTeachers() == 2);
 
-    school.removeStudent(4);
-    list<Student*> lst=school.getTeacherStudents(9);
-    list<Student*>::iterator it=lst.begin();
-    while(it!=lst.end()){
-        (*it++)->action();
+        school.removeStudent(4);
+        assert(school.getNumOfStudents() == 7);
+
+        //Student* stud=NULL;
+        //school.addStudent(stud);
+        list < Student * > lst = school.getTeacherStudents(9);
+        list<Student *>::iterator it = lst.begin();
+        while (it != lst.end()) {
+            (*it++)->action();
+        }
+    }catch(const std::runtime_error& exception){
+        std::cout<<"Runtime error: "<<exception.what();
+    }catch(const std::invalid_argument& exception) {
+        std::cout << "Invalid argument: " << exception.what();
+    }catch(const std::logic_error& exception) {
+        std::cout << "Logic error: " << exception.what();
     }
 }

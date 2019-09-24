@@ -84,6 +84,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/hadasswittow/CLionProjects/schoolexe/MyString.cpp">
+			<Option target="schoolexe"/>
+		</Unit>
+		<Unit filename="/home/hadasswittow/CLionProjects/schoolexe/MyString.h">
+			<Option target="schoolexe"/>
+		</Unit>
 		<Unit filename="/home/hadasswittow/CLionProjects/schoolexe/Person.cpp">
 			<Option target="schoolexe"/>
 		</Unit>
@@ -115,6 +121,12 @@
 			<Option target="schoolexe"/>
 		</Unit>
 		<Unit filename="/home/hadasswittow/CLionProjects/schoolexe/main.cpp">
+			<Option target="schoolexe"/>
+		</Unit>
+		<Unit filename="/home/hadasswittow/CLionProjects/schoolexe/stringFunctions.cpp">
+			<Option target="schoolexe"/>
+		</Unit>
+		<Unit filename="/home/hadasswittow/CLionProjects/schoolexe/stringFunctions.h">
 			<Option target="schoolexe"/>
 		</Unit>
 		<Unit filename="/home/hadasswittow/CLionProjects/schoolexe/CMakeLists.txt">

@@ -12,6 +12,7 @@ using namespace std;
 #include <list>
 #include "Teacher.h"
 #include "Student.h"
+#include <exception>
 
 typedef map<size_t ,list<Student*> > schoolMap;
 class School {
@@ -40,15 +41,20 @@ inline size_t School::getNumOfTeachers() const{
     return m_teachers.size();
 }
 inline std::list<Student*> School::getTeacherStudents(const size_t teacherName) const {
+    if(m_teachersAndStudents.find(teacherName) == m_teachersAndStudents.end())
+        throw std::runtime_error("no such teacher in the map!!");
+
     return m_teachersAndStudents[teacherName];
 }
 inline void School::addStudent(Student* student){
-    if(student)
-        m_students.push_back(student);
+    if(!student)
+       throw std::runtime_error("Student is null!");
+    m_students.push_back(student);
 }
 inline void School::addTeacher(Teacher* teacher){
-    if(teacher)
-        m_teachers.push_back(teacher);
+    if(!teacher)
+        throw std::runtime_error("Teacher is null");
+    m_teachers.push_back(teacher);
 }
 
 #endif //SCHOOLEXE_SCHOOL_H

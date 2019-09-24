@@ -123,6 +123,33 @@ schoolexe/fast:
 	$(MAKE) -f CMakeFiles/schoolexe.dir/build.make CMakeFiles/schoolexe.dir/build
 .PHONY : schoolexe/fast
 
+MyString.o: MyString.cpp.o
+
+.PHONY : MyString.o
+
+# target to build an object file
+MyString.cpp.o:
+	$(MAKE) -f CMakeFiles/schoolexe.dir/build.make CMakeFiles/schoolexe.dir/MyString.cpp.o
+.PHONY : MyString.cpp.o
+
+MyString.i: MyString.cpp.i
+
+.PHONY : MyString.i
+
+# target to preprocess a source file
+MyString.cpp.i:
+	$(MAKE) -f CMakeFiles/schoolexe.dir/build.make CMakeFiles/schoolexe.dir/MyString.cpp.i
+.PHONY : MyString.cpp.i
+
+MyString.s: MyString.cpp.s
+
+.PHONY : MyString.s
+
+# target to generate assembly for a file
+MyString.cpp.s:
+	$(MAKE) -f CMakeFiles/schoolexe.dir/build.make CMakeFiles/schoolexe.dir/MyString.cpp.s
+.PHONY : MyString.cpp.s
+
 Person.o: Person.cpp.o
 
 .PHONY : Person.o
@@ -285,6 +312,33 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles/schoolexe.dir/build.make CMakeFiles/schoolexe.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+stringFunctions.o: stringFunctions.cpp.o
+
+.PHONY : stringFunctions.o
+
+# target to build an object file
+stringFunctions.cpp.o:
+	$(MAKE) -f CMakeFiles/schoolexe.dir/build.make CMakeFiles/schoolexe.dir/stringFunctions.cpp.o
+.PHONY : stringFunctions.cpp.o
+
+stringFunctions.i: stringFunctions.cpp.i
+
+.PHONY : stringFunctions.i
+
+# target to preprocess a source file
+stringFunctions.cpp.i:
+	$(MAKE) -f CMakeFiles/schoolexe.dir/build.make CMakeFiles/schoolexe.dir/stringFunctions.cpp.i
+.PHONY : stringFunctions.cpp.i
+
+stringFunctions.s: stringFunctions.cpp.s
+
+.PHONY : stringFunctions.s
+
+# target to generate assembly for a file
+stringFunctions.cpp.s:
+	$(MAKE) -f CMakeFiles/schoolexe.dir/build.make CMakeFiles/schoolexe.dir/stringFunctions.cpp.s
+.PHONY : stringFunctions.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -294,6 +348,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... schoolexe"
 	@echo "... edit_cache"
+	@echo "... MyString.o"
+	@echo "... MyString.i"
+	@echo "... MyString.s"
 	@echo "... Person.o"
 	@echo "... Person.i"
 	@echo "... Person.s"
@@ -312,6 +369,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... stringFunctions.o"
+	@echo "... stringFunctions.i"
+	@echo "... stringFunctions.s"
 .PHONY : help
 
 

@@ -5,6 +5,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/schoolexe.dir/Teacher.cpp.o"
   "CMakeFiles/schoolexe.dir/School.cpp.o"
   "CMakeFiles/schoolexe.dir/Tests.cpp.o"
+  "CMakeFiles/schoolexe.dir/MyString.cpp.o"
+  "CMakeFiles/schoolexe.dir/stringFunctions.cpp.o"
   "schoolexe.pdb"
   "schoolexe"
 )
