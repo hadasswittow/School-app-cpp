@@ -41,7 +41,11 @@ void test_school() {
     assert(school.getNumOfTeachers() == 3);
     school.pairTeacherToStudent(3);
 
-    list<Student*> lst=school.getTeacherStudents("T3");
+    school.removeTeacher(8);
+    assert(school.getNumOfTeachers() == 2);
+
+    school.removeStudent(4);
+    list<Student*> lst=school.getTeacherStudents(9);
     list<Student*>::iterator it=lst.begin();
     while(it!=lst.end()){
         (*it++)->action();

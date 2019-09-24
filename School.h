@@ -13,7 +13,7 @@ using namespace std;
 #include "Teacher.h"
 #include "Student.h"
 
-typedef map<std::string,list<Student*> > schoolMap;
+typedef map<size_t ,list<Student*> > schoolMap;
 class School {
 public:
     void addStudent(Student* student);
@@ -21,7 +21,9 @@ public:
     size_t getNumOfStudents() const;
     size_t getNumOfTeachers() const;
     void pairTeacherToStudent(size_t ratio);
-    std::list<Student*> getTeacherStudents(const std::string& teacherName) const ;
+    void removeStudent(size_t student_id);
+    void removeTeacher(size_t Teacher_id);
+    std::list<Student*> getTeacherStudents(const size_t teacherName) const ;
 private:
     vector<Student*> m_students;
     vector<Teacher*> m_teachers;
@@ -37,7 +39,16 @@ inline size_t School::getNumOfStudents() const{
 inline size_t School::getNumOfTeachers() const{
     return m_teachers.size();
 }
-inline std::list<Student*> School::getTeacherStudents(const std::string& teacherName) const {
+inline std::list<Student*> School::getTeacherStudents(const size_t teacherName) const {
     return m_teachersAndStudents[teacherName];
 }
+inline void School::addStudent(Student* student){
+    if(student)
+        m_students.push_back(student);
+}
+inline void School::addTeacher(Teacher* teacher){
+    if(teacher)
+        m_teachers.push_back(teacher);
+}
+
 #endif //SCHOOLEXE_SCHOOL_H

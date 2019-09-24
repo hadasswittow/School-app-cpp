@@ -10,13 +10,13 @@
 
 class Teacher: public Person {
 public:
-    Teacher(const std::string& name, const std::string& lesson):Person(name),m_lesson(lesson){};
+    Teacher(const MyString& name, const MyString& lesson):Person(name),m_lesson(lesson){};
     /*virtual*/void action();
-    const std::string& getLesson();
+    const MyString& getLesson();
 private:
-    std::string m_lesson;
+    MyString m_lesson;
 };
-inline const std::string& Teacher::getLesson() {
+inline const MyString& Teacher::getLesson() {
     return m_lesson;
 }
 inline void Teacher::action() {

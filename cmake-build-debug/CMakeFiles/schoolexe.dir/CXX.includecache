@@ -6,13 +6,19 @@
 
 #IncludeRegexTransform: 
 
+/home/hadasswittow/CLionProjects/schoolexe/MyString.h
+iostream
+-
+cstddef
+-
+stringFunctions.h
+/home/hadasswittow/CLionProjects/schoolexe/stringFunctions.h
+
 /home/hadasswittow/CLionProjects/schoolexe/Person.h
 string
 -
-
-/home/hadasswittow/CLionProjects/schoolexe/School.cpp
-School.h
-/home/hadasswittow/CLionProjects/schoolexe/School.h
+MyString.h
+/home/hadasswittow/CLionProjects/schoolexe/MyString.h
 
 /home/hadasswittow/CLionProjects/schoolexe/School.h
 vector
@@ -26,19 +32,11 @@ Teacher.h
 Student.h
 /home/hadasswittow/CLionProjects/schoolexe/Student.h
 
-/home/hadasswittow/CLionProjects/schoolexe/Student.cpp
-Student.h
-/home/hadasswittow/CLionProjects/schoolexe/Student.h
-
 /home/hadasswittow/CLionProjects/schoolexe/Student.h
 iostream
 -
 Person.h
 /home/hadasswittow/CLionProjects/schoolexe/Person.h
-
-/home/hadasswittow/CLionProjects/schoolexe/Teacher.cpp
-Teacher.h
-/home/hadasswittow/CLionProjects/schoolexe/Teacher.h
 
 /home/hadasswittow/CLionProjects/schoolexe/Teacher.h
 iostream
@@ -57,10 +55,16 @@ assert.h
 /home/hadasswittow/CLionProjects/schoolexe/Tests.h
 School.h
 /home/hadasswittow/CLionProjects/schoolexe/School.h
+MyString.h
+/home/hadasswittow/CLionProjects/schoolexe/MyString.h
 
 /home/hadasswittow/CLionProjects/schoolexe/main.cpp
 iostream
 -
 Tests.h
 /home/hadasswittow/CLionProjects/schoolexe/Tests.h
+
+/home/hadasswittow/CLionProjects/schoolexe/stringFunctions.h
+cstddef
+-
 
